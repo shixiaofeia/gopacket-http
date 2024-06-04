@@ -18,14 +18,14 @@
 
 ## 使用
 
-1. 安装libpcap-dev
+1. 安装libpcap-dev 和 gcc
 
 ```sh
 # Ubuntu
-sudo apt-get install libpcap-dev
+sudo apt install -y libpcap-dev gcc
 
 # CentOS
-sudo yum install libpcap-devel
+sudo yum install -y libpcap-devel gcc
 
 # MacOS(Homebrew)
 brew install libpcap
@@ -41,7 +41,7 @@ go get -u github.com/shixiaofeia/gopacket-http
 3. 在代码中导入
 
 ```go
-import "github.com/shixiaofeia/gopacket-http"
+import "github.com/shixiaofeia/gopacket-http/packet"
 ```
 
 ## 快速开始
